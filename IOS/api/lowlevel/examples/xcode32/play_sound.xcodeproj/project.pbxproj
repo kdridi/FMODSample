@@ -1,0 +1,247 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF433CF1166C32D4008185CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF433CF0166C32D4008185CC /* AudioToolbox.framework */; };
+		AF433E75166C8634008185CC /* Media in Resources */ = {isa = PBXBuildFile; fileRef = AF433E74166C8634008185CC /* Media */; };
+		AF7565D11668754E00CA09EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7565D01668754E00CA09EB /* UIKit.framework */; };
+		AF7565D616687BBB00CA09EB /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = AF7565D516687BBB00CA09EB /* common_platform.mm */; };
+		AF7565D916687BD400CA09EB /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF7565D716687BD400CA09EB /* common.cpp */; };
+        BBBBBBBBBBBB000000000000 = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAA000000000000; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        AAAAAAAAAAAA000000000000 = {isa = PBXFileReference; name = play_sound.cpp; path = ../play_sound.cpp; sourceTree = "<group>"; };
+		AF433CF0166C32D4008185CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AF433E74166C8634008185CC /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Media; path = ../media; sourceTree = "<group>"; };
+		AF75656F16681E3000CA09EB /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF75657B16681E3000CA09EB /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = info.plist; path = info.plist; sourceTree = "<group>"; };
+		AF7565D01668754E00CA09EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		AF7565D416687BBB00CA09EB /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common_platform.h; path = ../common_platform.h; sourceTree = "<group>"; };
+		AF7565D516687BBB00CA09EB /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = common_platform.mm; path = ../common_platform.mm; sourceTree = "<group>"; };
+		AF7565D716687BD400CA09EB /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = common.cpp; path = ../common.cpp; sourceTree = "<group>"; };
+		AF7565D816687BD400CA09EB /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../common.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF75656C16681E3000CA09EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF433CF1166C32D4008185CC /* AudioToolbox.framework in Frameworks */,
+				AF7565D11668754E00CA09EB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF75654A166817CE00CA09EB = {
+			isa = PBXGroup;
+			children = (
+				AF433E74166C8634008185CC /* Media */,
+				AF7565D2166876B600CA09EB /* Libraries */,
+				AF75657916681E3000CA09EB /* Sources */,
+				AF75657016681E3000CA09EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF75657016681E3000CA09EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF75656F16681E3000CA09EB /* example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF75657916681E3000CA09EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AF7565D316687B9600CA09EB /* common */,
+                AAAAAAAAAAAA000000000000,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		AF7565D2166876B600CA09EB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				AF433CF0166C32D4008185CC /* AudioToolbox.framework */,
+				AF7565D01668754E00CA09EB /* UIKit.framework */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		AF7565D316687B9600CA09EB /* common */ = {
+			isa = PBXGroup;
+			children = (
+				AF75657B16681E3000CA09EB /* info.plist */,
+				AF7565D716687BD400CA09EB /* common.cpp */,
+				AF7565D816687BD400CA09EB /* common.h */,
+				AF7565D416687BBB00CA09EB /* common_platform.h */,
+				AF7565D516687BBB00CA09EB /* common_platform.mm */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF75656E16681E3000CA09EB /* example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF75658D16681E3000CA09EB /* Build configuration list for PBXNativeTarget "example" */;
+			buildPhases = (
+				AF75656B16681E3000CA09EB /* Sources */,
+				AF75656C16681E3000CA09EB /* Frameworks */,
+				AF433E72166C85F2008185CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+            name = play_sound;
+			productReference = AF75656F16681E3000CA09EB /* example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF75654C166817CE00CA09EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = AF75654F166817CE00CA09EB /* Build configuration list for PBXProject "example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AF75654A166817CE00CA09EB;
+			productRefGroup = AF75657016681E3000CA09EB /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+			);
+			projectRoot = "";
+			targets = (
+				AF75656E16681E3000CA09EB /* example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF433E72166C85F2008185CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF433E75166C8634008185CC /* Media in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF75656B16681E3000CA09EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+                BBBBBBBBBBBB000000000000,
+				AF7565D616687BBB00CA09EB /* common_platform.mm in Sources */,
+				AF7565D916687BD400CA09EB /* common.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AF756551166817CE00CA09EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					../../inc,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../lib,
+				);
+				INFOPLIST_FILE = info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lfmodL_$PLATFORM_NAME";
+				PRODUCT_NAME = $PROJECT_NAME;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF756552166817CE00CA09EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				HEADER_SEARCH_PATHS = (
+					../../inc,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					../../lib,
+				);
+				INFOPLIST_FILE = info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				OTHER_LDFLAGS = "-lfmod_$PLATFORM_NAME";
+				PRODUCT_NAME = $PROJECT_NAME;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF75658B16681E3000CA09EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		AF75658C16681E3000CA09EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF75654F166817CE00CA09EB /* Build configuration list for PBXProject "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF756551166817CE00CA09EB /* Debug */,
+				AF756552166817CE00CA09EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF75658D16681E3000CA09EB /* Build configuration list for PBXNativeTarget "example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF75658B16681E3000CA09EB /* Debug */,
+				AF75658C16681E3000CA09EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF75654C166817CE00CA09EB /* Project object */;
+}

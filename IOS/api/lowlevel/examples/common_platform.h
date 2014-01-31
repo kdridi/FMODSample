@@ -1,0 +1,1 @@
+bool Common_SuspendState();
