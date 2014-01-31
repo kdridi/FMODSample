@@ -12,15 +12,15 @@
 		AF7565D11668754E00CA09EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7565D01668754E00CA09EB /* UIKit.framework */; };
 		AF7565D616687BBB00CA09EB /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = AF7565D516687BBB00CA09EB /* common_platform.mm */; };
 		AF7565D916687BD400CA09EB /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AF7565D716687BD400CA09EB /* common.cpp */; };
-        BBBBBBBBBBBB000000000000 = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAA000000000000; };
+		BBBBBBBBBBBB000000000000 /* event_parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAAAAAAAAAAA000000000000 /* event_parameter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-        AAAAAAAAAAAA000000000000 = {isa = PBXFileReference; name = event_parameter.cpp; path = ../event_parameter.cpp; sourceTree = "<group>"; };
+		AAAAAAAAAAAA000000000000 /* event_parameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = event_parameter.cpp; path = ../event_parameter.cpp; sourceTree = "<group>"; };
 		AF433CF0166C32D4008185CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AF433E74166C8634008185CC /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Media; path = ../media; sourceTree = "<group>"; };
-		AF75656F16681E3000CA09EB /* example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF75657B16681E3000CA09EB /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = info.plist; path = info.plist; sourceTree = "<group>"; };
+		AF75656F16681E3000CA09EB /* event_parameter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = event_parameter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF75657B16681E3000CA09EB /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		AF7565D01668754E00CA09EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		AF7565D416687BBB00CA09EB /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common_platform.h; path = ../common_platform.h; sourceTree = "<group>"; };
 		AF7565D516687BBB00CA09EB /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = common_platform.mm; path = ../common_platform.mm; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		AF75657016681E3000CA09EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF75656F16681E3000CA09EB /* example.app */,
+				AF75656F16681E3000CA09EB /* event_parameter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				AF7565D316687B9600CA09EB /* common */,
-                AAAAAAAAAAAA000000000000,
+				AAAAAAAAAAAA000000000000 /* event_parameter.cpp */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			);
 			name = example;
 			productName = example;
-			productReference = AF75656F16681E3000CA09EB /* example.app */;
+			productReference = AF75656F16681E3000CA09EB /* event_parameter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,7 +117,7 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = AF75654F166817CE00CA09EB /* Build configuration list for PBXProject "example" */;
+			buildConfigurationList = AF75654F166817CE00CA09EB /* Build configuration list for PBXProject "event_parameter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -127,8 +127,6 @@
 			mainGroup = AF75654A166817CE00CA09EB;
 			productRefGroup = AF75657016681E3000CA09EB /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				AF75656E16681E3000CA09EB /* example */,
@@ -152,7 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-                BBBBBBBBBBBB000000000000,
+				BBBBBBBBBBBB000000000000 /* event_parameter.cpp in Sources */,
 				AF7565D616687BBB00CA09EB /* common_platform.mm in Sources */,
 				AF7565D916687BD400CA09EB /* common.cpp in Sources */,
 			);
@@ -164,8 +162,10 @@
 		AF756551166817CE00CA09EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -173,12 +173,12 @@
 					../../inc,
 					../../../lowlevel/inc,
 				);
+				INFOPLIST_FILE = info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					../../lib,
 					../../../lowlevel/lib,
 				);
-				INFOPLIST_FILE = info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lfmodL_$PLATFORM_NAME",
@@ -194,20 +194,22 @@
 		AF756552166817CE00CA09EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-                ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
 				HEADER_SEARCH_PATHS = (
 					../../inc,
 					../../../lowlevel/inc,
 				);
+				INFOPLIST_FILE = info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					../../lib,
 					../../../lowlevel/lib,
 				);
-				INFOPLIST_FILE = info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_LDFLAGS = (
 					"-lfmod_$PLATFORM_NAME",
 					"-lfmodstudio_$PLATFORM_NAME",
@@ -234,7 +236,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AF75654F166817CE00CA09EB /* Build configuration list for PBXProject "example" */ = {
+		AF75654F166817CE00CA09EB /* Build configuration list for PBXProject "event_parameter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AF756551166817CE00CA09EB /* Debug */,
