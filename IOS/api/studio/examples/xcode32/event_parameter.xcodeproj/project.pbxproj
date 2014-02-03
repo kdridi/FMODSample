@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB26E6A189F2EC20004ED76 /* tree.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0AB26E69189F2EC20004ED76 /* tree.cc */; };
 		AF433CF1166C32D4008185CC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF433CF0166C32D4008185CC /* AudioToolbox.framework */; };
 		AF433E75166C8634008185CC /* Media in Resources */ = {isa = PBXBuildFile; fileRef = AF433E74166C8634008185CC /* Media */; };
 		AF7565D11668754E00CA09EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7565D01668754E00CA09EB /* UIKit.framework */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AB26E69189F2EC20004ED76 /* tree.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tree.cc; path = ../tree.cc; sourceTree = "<group>"; };
 		AAAAAAAAAAAA000000000000 /* event_parameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = event_parameter.cpp; path = ../event_parameter.cpp; sourceTree = "<group>"; };
 		AF433CF0166C32D4008185CC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AF433E74166C8634008185CC /* Media */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Media; path = ../media; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		AF7565D316687B9600CA09EB /* common */ = {
 			isa = PBXGroup;
 			children = (
+				0AB26E69189F2EC20004ED76 /* tree.cc */,
 				AF75657B16681E3000CA09EB /* info.plist */,
 				AF7565D716687BD400CA09EB /* common.cpp */,
 				AF7565D816687BD400CA09EB /* common.h */,
@@ -153,6 +156,7 @@
 				BBBBBBBBBBBB000000000000 /* event_parameter.cpp in Sources */,
 				AF7565D616687BBB00CA09EB /* common_platform.mm in Sources */,
 				AF7565D916687BD400CA09EB /* common.cpp in Sources */,
+				0AB26E6A189F2EC20004ED76 /* tree.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
